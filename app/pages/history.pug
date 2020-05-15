@@ -1,0 +1,80 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg.history-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.history-section
+					.container.container_width
+						.typography
+							h1.wow.bounceInLeft Produce Clean Energy
+							
+						.achievements-wrap.achievements-sticky
+							.achievement.wow.flipInX
+								.achievement__wrap
+									span.achievement__count Powerwall
+									h4.achievement__name Store Your Energy
+									p.achievement__info A home battery designed to store your clean energy, so you can use it anytime you want—at night or during an outage.
+									
+
+							.achievement.wow.flipInX
+								.achievement__wrap
+									span.achievement__count Commercial Solar
+									h4.achievement__name Produce Clean Energy
+									p.achievement__info Solar panels generate energy from your commercial building or office rooftop to save you money.
+								
+							
+							.achievement.wow.flipInX
+								.achievement__wrap
+									span.achievement__count Megapack and Powerpack
+									h4.achievement__name Massive Energy Storage
+									p.achievement__info A giant battery designed to change the way we power the world—with clean energy, at an enormous scale.
+	
+							
+						.history-wrap
+							.history
+								.history__info.typography
+									h2.wow.bounceInLeft 2020
+									.history__text.scroll-wrap
+										p Seamless backup power. With or without solar. Powerwall detects grid outages and automatically becomes your home's main energy source. Protect your home from the next power outage and keep your lights on, phones charged, and no puddles under the fridge.
+										p Self-Powered home. Just add Powerwall.Powerwall integrates with solar to store excess energy generated during the day and makes it available when you need it, minimizing reliance on your utility.
+										p Time-Based Control. A Smart Way to Use Energy.If your utility prices vary throughout the day, set Powerwall in Time-Based Control to maximize savings. Powerwall learns patterns in your energy usage and solar generation—using stored energy to avoid purchasing high-cost electricity.
+									
+								.history__img
+									img(src="images/powerwall.jpg", alt="")
+
+							.history
+								.history__info.typography
+									h2.wow.bounceInLeft 2022
+									.history__text.scroll-wrap
+										p Save on Your Energy Costs with Solar Commercial and industrial organizations can save on their energy costs by adopting solar and taking control of their own generation.
+										p Avoid Peak Demand Charges with Powerpack Powerpack systems can be charged when energy prices are low and discharged during peak demand when utility rates are high.
+									
+								.history__img
+									img(src="images/solar.jpg", alt="")
+
+							.history
+								.history__info.typography
+									h2.wow.bounceInLeft 2024
+									.history__text.scroll-wrap
+										p Renewable Microgrids Our turnkey microgrids combine renewable energy and storage to provide communities with clean, resilient and affordable power. Realize long term savings by reducing expensive diesel and utility costs and eliminate interruptions from blackouts.
+										p Avoid Peak Demand Charges with Powerpack Powerpack systems can be charged when energy prices are low and discharged during peak demand when utility rates are high.
+
+
+									
+								.history__img
+									img(src="images/commercial.jpg", alt="")
+
+							
+
+
+
+		block footer
+			include ../blocks/footer/footer

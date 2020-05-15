@@ -1,0 +1,39 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.one-news-section
+					.container
+						.typography
+							span.wow.bounceInLeft May
+							h1.wow.bounceInLeft Getting Back to Work
+	
+						
+						.news-sliser.js-news-sliser
+							.slide
+								img(src="images/news.jpg", alt="")
+
+						.typography
+							h3.wow.bounceInLeft Getting Back to Work
+
+							p.wow.bounceInLeft Tesla is the last major carmaker remaining in California, and the largest manufacturing employer in the State with more than 10,000 employees at our Fremont factory and 20,000 statewide. We understand the impacts COVID-19 has caused and have a responsibility to look out for the livelihoods and safety of our personnel, many of whom rely on us and have been out of work for weeks due to the impacts of shelter-in-place orders.
+
+							p.wow.bounceInLeft Given the Governor’s recent guidance, which is supported by science and credible health data, the state and federal government’s classification of vehicle manufacturing as national critical infrastructure, and our robust safety plan, Tesla has started the process of resuming operations. Our employees are excited to get back to work, and we’re doing so with their health and safety in mind.
+
+							h3.wow.bounceInLeft What We’re Doing
+							
+							p.wow.bounceInLeft Our restart plan is the result of months of careful planning and preparation. It was modeled after the comprehensive return to work plan we established at our Shanghai Gigafactory, which has seen smooth and healthy operations for the last three months.
+
+							p.wow.bounceInLeft We are taking the time we need to get our personnel properly trained before they begin work and all employees must complete an online video training before returning to work at any Tesla facility. We have a thorough return-to-work plan for all locations. A cross-functional response team, including an in-house physician, has been working daily to establish health and safety guidelines based on location- and job-specific risk assessments, and we are continuously reviewing our processes to ensure they work for our employees in this new environment.
+
+		block footer
+			include ../blocks/footer/footer

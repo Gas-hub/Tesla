@@ -1,0 +1,48 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.product-section
+					.container.container_width
+						.product-wrap.typography
+							.product-container
+								.product-img
+									.img-wrap
+										img(src="images/cybertruk.png", alt="")
+								.product-description
+									h2 cybertruck
+									ul
+										li 
+											span 0-60 MPH
+											span 6.5 SECONDS
+										li 
+											span RANGE
+											span 250+ MILES (EPA EST.)
+										li 
+											span DRIVETRAIN
+											span REAR-WHEEL DRIVE
+										li 
+											span STORAGE
+											span 100 CU FT
+										li 
+											span VAULT LENGTH
+											span 6.5 FT
+										li 
+											span TOWING CAPACITY
+											span 7,500+ LBS
+										li 
+											span AUTOPILOT
+											span STANDARD
+				
+
+		block footer
+			include ../blocks/footer/footer

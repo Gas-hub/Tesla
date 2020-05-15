@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper index-bg">
+      <div class="bg rellax" data-rellax-speed="5" data-rellax-percentage="0.6"></div>
+      <header class="header">
+        <div class="container container_width"><a class="logo" href="index.html"><img src="images/logo.svg" alt=""></a>
+          <div class="burger-wrap">
+            <div class="search"></div>
+            <div class="lang"><span class="lang__current">EN</span>
+              <div class="lang__wrap"><a href="#">EN</a><a href="#">RU</a><a href="#">UA</a><a href="#">DE</a></div>
+            </div>
+            <div class="burger js-burger"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <div class="nav js-nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Main</a></li>
+            <li><a href="about.html">about company</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="news.html">news</a></li>
+          </ul>
+          <div class="soc-wrap"><a class="inst" href="#"></a><a class="fb" href="#"></a><a class="you" href="#"></a></div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="one-news-section">
+          <div class="container">
+            <div class="typography"><span class="wow bounceInLeft">May</span>
+              <h1 class="wow bounceInLeft">Getting Back to Work</h1>
+            </div>
+            <div class="news-sliser js-news-sliser">
+              <div class="slide"><img src="images/news.jpg" alt=""></div>
+            </div>
+            <div class="typography">
+              <h3 class="wow bounceInLeft">Getting Back to Work</h3>
+              <p class="wow bounceInLeft">Tesla is the last major carmaker remaining in California, and the largest manufacturing employer in the State with more than 10,000 employees at our Fremont factory and 20,000 statewide. We understand the impacts COVID-19 has caused and have a responsibility to look out for the livelihoods and safety of our personnel, many of whom rely on us and have been out of work for weeks due to the impacts of shelter-in-place orders.</p>
+              <p class="wow bounceInLeft">Given the Governor’s recent guidance, which is supported by science and credible health data, the state and federal government’s classification of vehicle manufacturing as national critical infrastructure, and our robust safety plan, Tesla has started the process of resuming operations. Our employees are excited to get back to work, and we’re doing so with their health and safety in mind.</p>
+              <h3 class="wow bounceInLeft">What We’re Doing</h3>
+              <p class="wow bounceInLeft">Our restart plan is the result of months of careful planning and preparation. It was modeled after the comprehensive return to work plan we established at our Shanghai Gigafactory, which has seen smooth and healthy operations for the last three months.</p>
+              <p class="wow bounceInLeft">We are taking the time we need to get our personnel properly trained before they begin work and all employees must complete an online video training before returning to work at any Tesla facility. We have a thorough return-to-work plan for all locations. A cross-functional response team, including an in-house physician, has been working daily to establish health and safety guidelines based on location- and job-specific risk assessments, and we are continuously reviewing our processes to ensure they work for our employees in this new environment.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container container_width"><a class="footer-text site-map" href="#"> Locations</a>
+          <p class="footer-text copyright">Tesla © 2020 </p>
+          <div class="footer-img"><img src="images/logo.svg" alt=""></div>
+        </div>
+      </footer>
+      <div class="mask js-mask"></div>
+      <div class="modal modal-contact js-contacts">
+        <div class="contact-wrap contact-wrap_line">
+          <div class="modal-close js-modal-close"></div><span class="thanks-title">отправка резюме<br>на вакансию</span>
+          <form class="resumeForm" action="#">
+            <div class="resumeForm__wrap">
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Фамилия">
+              </div>
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Имя">
+              </div>
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Email"><span class="resumeForm__error js-error">введите корректный email</span>
+              </div>
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Контактный телефон"><span class="resumeForm__error js-error">введите корректный номер телефона</span>
+              </div>
+              <div class="resumeForm__file">
+                <input class="resumeForm__input-file" type="file">
+                <lable class="resumeForm__lable-file">Добавьте файл резюме</lable>
+              </div>
+              <p class="resumeForm__format">Форматы файлов: doc, docx, rtf, txt, odt, pdf (2 Мб максимум)</p>
+              <div class="resumeForm__latter-wrap"><a class="resumeForm__latter" href="#">Добавить сопроводительное  письмо</a><span class="resumeForm__dispensable">необязательно</span></div>
+              <button class="resumeForm__btn" type="submit">отправить резюме</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal-contact js-thanks">
+        <div class="contact-wrap">
+          <div class="modal-close js-modal-close"></div><span class="thanks-title thanks-title_purple">спасибо!</span>
+          <p class="thanks-text">ваше резюме на рассмотрении. В ближайшее время, сотрудники нашей компании свяжутся с вами.</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js" integrity="sha256-b9iCa+uXg1ls4OGWXZY7fTQVTEgK46A+Yy6gjTrRg3U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

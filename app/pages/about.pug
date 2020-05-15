@@ -1,0 +1,88 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.overflow.index-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+				section.about-section
+					.container.container_width
+						.about-wrap.typography
+							h3.wow.bounceInLeft Tesla’s mission is to accelerate
+								| 
+								br 
+								| the world’s transition to sustainable energy.
+						.about-content
+							.about-info
+								.typography
+									h2.wow.bounceInLeft About Tesla
+									p To create an entire sustainable energy ecosystem, Tesla also manufactures a unique set of energy solutions, Powerwall, Powerpack and Solar Roof, enabling homeowners, businesses, and utilities to manage renewable energy generation, storage, and consumption. Supporting Tesla’s automotive and energy products is Gigafactory 1 – a facility designed to significantly reduce battery cell costs. By bringing cell production in-house, Tesla manufactures batteries at the volumes required to meet production goals, while creating thousands of jobs.
+									a(href="history.html").section-link history company
+
+							.about-img
+								img(src="images/about.jpg", alt="")
+							.about-img(style="background-image: url('images/about1.jpg')")
+								img(src="images/about1.jpg", alt="")
+							.about-img(style="background-image: url('images/about.jpg')")
+								img(src="images/about3.jpg", alt="")
+
+							.about-info
+								.typography
+									h2.wow.bounceInLeft Strategy
+									p Tesla's business strategy is to emulate typical technological-product life cycles and initially target affluent buyers, and then move into larger markets at lower price points.[42][49] The battery and electric drivetrain technology for each model would be developed and partially paid for through the sales of earlier models.[42][50] The Roadster was low-volume and priced at US$109,000. Model S and Model X target the broader luxury market. Model 3 and the Model Y are aimed at a higher-volume segment.[41][51] This business strategy is common in the technology industry.[52] According to a Musk blog post, "New technology in any field takes a few versions to optimize before reaching the mass market, and in this case it is competing with 150 years and trillions of dollars spent on gasoline cars.
+
+				section.team-section
+					.container.container_width
+						.typography
+							h2.wow.bounceInLeft team
+						.team-wrap
+							a(href="#").team
+								.team__photo
+									img(src="images/team1.jpg", alt="")
+								span.team__name Elon 
+								span.team__name Musk
+								spanspan.team__position founder
+
+							a(href="#").team
+								.team__photo
+									img(src="images/team2.jpg", alt="")
+								span.team__name Zachary J. 
+								span.team__name Kirkhorn
+								spanspan.team__position CFO
+
+							a(href="#").team
+								.team__photo
+									img(src="images/team3.jpg", alt="")
+								span.team__name Jerome 
+								span.team__name Guillen
+								spanspan.team__position president
+
+				section.production-section
+					.container.container_width
+						.typography
+							h2.wow.bounceInLeft products
+						.production-wrap
+							a(href="product.html").production
+								.production__img
+									img(src="images/production.png", alt="")
+								h3.production__name tesla cybertruck 
+								
+							a(href="product.html").production
+								.production__img
+									img(src="images/production1.png", alt="")
+								h3.production__name tesla roadster
+							
+							a(href="product.html").production
+								.production__img
+									img(src="images/production2.png", alt="")
+								h3.production__name Tesla Model S 
+
+						
+
+		block footer
+			include ../blocks/footer/footer

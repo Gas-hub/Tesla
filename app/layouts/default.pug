@@ -1,0 +1,14 @@
+include bem
+
+doctype html
+html(lang='ru')
+	include head
+	body(class=pageClass)
+		block wrapper
+			block header
+			block content
+			block footer
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js' integrity='sha256-b9iCa+uXg1ls4OGWXZY7fTQVTEgK46A+Yy6gjTrRg3U=' crossorigin='anonymous')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
+		script(src='js/app.js')

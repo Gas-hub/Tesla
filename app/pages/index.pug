@@ -1,0 +1,74 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg.home-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main.home-page
+				section.intro-section
+					.container.container_width
+						.intro-wrap.typography
+							span.wow.bounceInLeft BETTER UTILITY THAN A TRUCK WITH MORE PERFORMANCE THAN A SPORTS CAR
+							h1.wow.bounceInLeft EXOSKELETON
+							p.wow.bounceInLeft Cybertruck is built with an exterior shell made for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass.
+							a(href="#" id="video-link").video-link.wow.bounceInLeft watch video 
+
+						.soc-wrap
+							a(href="#").inst
+							a(href="#").fb
+							a(href="#").you
+				section.video
+					<video id="video"preload="auto" playsinline="" data-autoplay-desktop="true" data-autoplay-portrait="true" data-autoplay-mobile="true" muted="" loop="" poster="https://www.tesla.com/xNVh4yUEc3B9/performance_mobile_still.png" data-poster-desktop="https://www.tesla.com/xNVh4yUEc3B9/performance_desktop_still.png" data-poster-mobile="https://www.tesla.com/xNVh4yUEc3B9/performance_mobile_still.png" data-poster-portrait="" data-src-desktop="https://www.tesla.com/xNVh4yUEc3B9/performance_video_desktop.mp4" data-src-mobile="https://www.tesla.com/xNVh4yUEc3B9/peformance_video_mobile.mp4" data-src-portrait="https://www.tesla.com/xNVh4yUEc3B9/performance_video_desktop.mp4" data-object-fit="true" src="https://www.tesla.com/xNVh4yUEc3B9/peformance_video_mobile.mp4" data-loaded="true" autoplay=""></video>
+					<i class="fa fa-times" aria-hidden="true"></i>	
+				section.about-first-section.wow.slideLeft
+					.container
+						.about-first-section-sphere.rellax(data-rellax-speed="5" data-rellax-percentage="0")
+							include ../blocks/sphere/sphere
+						.about-wrap.typography
+							.typography-description-wrap
+								.typography-description
+									h2.wow.bounceInLeft ULTRA-HARD 
+									.typography-col
+										p If there was something better, we’d use it. Help eliminate dents, damage and long-term corrosion with a smooth monochrome exoskeleton that puts the shell on the outside of the car and provides you and your passengers maximum protection.
+								.typography-description
+									h2.wow.bounceInLeft TESLA ARMOR GLASS
+									.typography-col
+										p Ultra-strong glass and polymer-layered composite can absorb and redirect impact force for improved performance and damage tolerance.
+							.link-wrap
+								a(href="about.html").section-link 
+									img(src="images/logo2.svg", alt="") 
+									span about company
+				
+				section.partner-section
+					.container
+						.partner-section-sphere.partner-section-sphere--left.rellax(data-rellax-speed="-2" data-rellax-percentage="0.5")
+							include ../blocks/sphere/sphere
+						.partner-section-sphere.partner-section-sphere--right.rellax(data-rellax-speed="3" data-rellax-percentage="0.5")
+							include ../blocks/sphere/sphere
+						.partner-wrap
+							.empty
+							a(href="#").partner.middle.center
+								img(src="images/logo.svg", alt="")
+							a(href="#").partner.small.top
+								img(src="images/logo.svg", alt="")
+							a(href="#").partner.big.bottom
+								img(src="images/logo.svg", alt="")
+							a(href="#").partner.middle.bottom
+								img(src="images/logo.svg", alt="")
+							a(href="#").partner.small.center
+								img(src="images/logo.svg", alt="")
+							.empty
+							a(href="#").partner.small.center
+								img(src="images/logo.svg", alt="")
+							
+
+				
+
+
+		block footer
+			include ../blocks/footer/footer

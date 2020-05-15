@@ -1,0 +1,23 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.error-section
+					.container
+						p.error 404
+						p.error-text EXCUSE ME! THE PAGE YOU ARE LOOKING FOR CAN NOT BE FOUND.
+						p.error-text PLEASE USE A NAVIGATION OR SEARCH FORM TO FIND YOUR INTERESTING INFORMATION.
+						a(href="index.html").error-link Go back to the main page
+					
+
+		block footer
+			include ../blocks/footer/footer

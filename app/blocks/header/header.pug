@@ -1,0 +1,36 @@
+include ../bg/bg
+header.header
+	.container.container_width
+		a(href="index.html").logo
+			img(src="images/logo.svg", alt="")
+
+		.burger-wrap
+			.search
+			.lang
+				span.lang__current EN
+				.lang__wrap
+					a(href="#") EN
+					a(href="#") RU
+					a(href="#") UA
+					a(href="#") DE
+
+			.burger.js-burger
+				span
+				span
+				span
+
+	.nav.js-nav
+		ul.nav-list
+			li
+				a(href="index.html") Main
+			li
+				a(href="about.html") about company
+			li
+				a(href="history.html") history
+			li
+				a(href="news.html") news
+
+		.soc-wrap
+			a(href="#").inst
+			a(href="#").fb
+			a(href="#").you
